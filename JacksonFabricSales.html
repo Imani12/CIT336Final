@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Fabric Sales</title>
+	
+
+
+<style>
+	
+
+	body {
+  background-image: url("https://previews.123rf.com/images/casejustin/casejustin1201/casejustin120100041/12034810-seamless-pattern-big-white-polka-dots-pastel-lavender-background-includes-pattern-swatch-that-will-s.jpg");
+  background-repeat: repeat;
+}
+</style> 
+    
+
+	</head>
+
+
+<body>
+	
+
+
+<script>
+
+//https://st2.depositphotos.com/2827793/5952/v/950/depositphotos_59524699-stock-illustration-watercolor-floral-pattern.jpg
+
+//https://media.istockphoto.com/vectors/floral-3d-seamless-background-vector-id527344053?k=6&m=527344053&s=612x612&w=0&h=tBEUGYJV2_J3fgnKMbp8DkVpX14x3Mi8IqtMWLx098M=
+
+//https://st2.depositphotos.com/2827793/5952/v/950/depositphotos_59524699-stock-illustration-watercolor-floral-pattern.jpg
+
+/*random # from 1-10,
+keeps running until 10
+count # of times it ran
+must run at least 1x*/
+
+var count = 0;
+
+do{
+var ranNum = Math.floor(Math.random() *10+1);
+document.write("<br>The size selected " + ranNum);
+count = count + 1;
+
+
+
+
+}
+
+
+while (ranNum !=10)
+document.write("<br>The loop ran " + count + " times");
+
+
+var ranNum2 = Math.floor(Math.random() *50+50);
+while (ranNum2 > 60) {
+	document.write("<br>The amount of fabric you need is "+ ranNum2 + " inches for this size.")
+var ranNum2 = Math.floor(Math.random() *50+50);
+
+}
+
+
+document.write("<br><it> Your final price is $" + ranNum2);
+
+
+
+/* generate 10 random numbers, 1-10 and
+count how many times an even number 
+is displayed*/
+numEven =0;
+for(i=0;i<10;i++){
+var ranNum3 = Math.floor(Math.random() * 10+1);
+if(ranNum3%2 ==0) {
+
+	numEven = numEven + 1;
+
+
+document.write("<br>The suggested size is " + ranNum3);
+
+document.write("<br>There were " +numEven + " even numbers generated")
+
+}
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>
